@@ -102,7 +102,6 @@ func Day2P2(rows [][]int) int {
 		result := evenlyDivisible(row)
 		remainders = append(remainders, result)
 	}
-	fmt.Println("remainders:", remainders)
 	var sum int
 	for _, entry := range remainders {
 		sum += entry
@@ -111,7 +110,7 @@ func Day2P2(rows [][]int) int {
 }
 
 // Day2 is Day 2's master function
-func main() {
+func Day2() {
 	input := prepareInput()
 	diffs := Day2P1(input)
 	r := Day2P2(input)
