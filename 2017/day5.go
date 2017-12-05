@@ -63,7 +63,8 @@ func day5part2(input []int) int {
 func main() {
 	prepared := getInput()
 	steps := day5part1(prepared)
-	p2 := day5part2(prepared)
+	prepared2 := getInput()
+	p2 := day5part2(prepared2)
 	fmt.Println("p1:", steps)
 	fmt.Println("p2:", p2)
 }
