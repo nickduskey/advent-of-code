@@ -110,7 +110,7 @@ func Day2P2(rows [][]int) int {
 }
 
 // Day2 is Day 2's master function
-func Day2() {
+func main() {
 	input := prepareInput()
 	diffs := Day2P1(input)
 	r := Day2P2(input)

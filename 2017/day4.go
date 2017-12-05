@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func prepareInput() []string {
+func prepareD4Input() []string {
 	input := `pphsv ojtou brvhsj cer ntfhlra udeh ccgtyzc zoyzmh jum lugbnk
 	vxjnf fzqitnj uyfck blnl impo kxoow nngd worcm bdesehw
 	caibh nfuk kfnu llfdbz uxjty yxjut jcea
@@ -599,8 +599,8 @@ func p2(input []string) int {
 	return 512 - len(dedupedRows)
 }
 
-func main() {
-	rows := prepareInput()
+func d4() {
+	rows := prepareD4Input()
 	p1 := p1(rows)
 	p2 := p2(rows)
 	fmt.Println("p1:", p1)
